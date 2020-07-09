@@ -1,0 +1,6 @@
+<nav class="navbar">
+  <a *ngFor="let item of menuItems"
+     [routerLink]="[item.link]"
+     class="btn btn-basic"
+     routerLinkActive="active">{{ item.label }}</a>
+</nav>

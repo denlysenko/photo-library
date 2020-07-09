@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderComponent should create 1`] = `
+<app-header
+  menuItems={[Function Array]}
+>
+  <nav
+    class="navbar"
+  >
+    
+    <a
+      class="btn btn-basic"
+      href="/"
+      routerlinkactive="active"
+    >
+      Photos
+    </a>
+    <a
+      class="btn btn-basic"
+      href="/favorites"
+      routerlinkactive="active"
+    >
+      Favorites
+    </a>
+  </nav>
+</app-header>
+`;
