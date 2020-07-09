@@ -12,6 +12,7 @@ exports[`HeaderComponent should create 1`] = `
       class="btn btn-basic"
       href="/"
       routerlinkactive="active"
+      title="Photos"
     >
       Photos
     </a>
@@ -19,6 +20,7 @@ exports[`HeaderComponent should create 1`] = `
       class="btn btn-basic"
       href="/favorites"
       routerlinkactive="active"
+      title="Favorites"
     >
       Favorites
     </a>
