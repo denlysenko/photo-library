@@ -3,5 +3,6 @@
      [routerLink]="[item.link]"
      [title]="item.label"
      class="btn btn-basic"
-     routerLinkActive="active">{{ item.label }}</a>
+     routerLinkActive="active"
+     [routerLinkActiveOptions]="{ exact: true }">{{ item.label }}</a>
 </nav>
