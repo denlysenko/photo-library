@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhotoTileComponent should create 1`] = `
+<app-photo-tile
+  photo={[Function Object]}
+>
+  <div
+    class="photo-tile card"
+  >
+    <img
+      alt="photo"
+      class="photo"
+      src="link"
+    />
+  </div>
+</app-photo-tile>
+`;
