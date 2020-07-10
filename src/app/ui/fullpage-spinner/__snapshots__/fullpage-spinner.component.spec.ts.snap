@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FullpageSpinnerComponent should create 1`] = `
+<app-fullpage-spinner>
+  <div
+    class="spinner"
+  >
+    <div />
+    <div />
+    <div />
+    <div />
+  </div>
+</app-fullpage-spinner>
+`;
