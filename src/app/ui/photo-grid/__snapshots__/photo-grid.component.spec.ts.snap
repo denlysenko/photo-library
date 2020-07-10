@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhotoGridComponent should create 1`] = `
+<app-photo-grid
+  photoClicked={[Function EventEmitter_]}
+  photos={[Function Array]}
+>
+  <div
+    class="photo-grid"
+  >
+    
+    <app-photo-tile
+      data-testid="photo-tile"
+    >
+      <div
+        class="photo-tile card"
+      >
+        <img
+          alt="photo"
+          class="photo"
+          src="link"
+        />
+      </div>
+    </app-photo-tile>
+  </div>
+</app-photo-grid>
+`;
