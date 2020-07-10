@@ -40,7 +40,7 @@ describe('PhotoGridComponent', () => {
         '[data-testid=photo-tile]'
       );
       photoTile.click();
-      expect(photoClickedSpy).toHaveBeenCalledWith(photos[0].id);
+      expect(photoClickedSpy).toHaveBeenCalledWith(photos[0]);
     });
   });
 });

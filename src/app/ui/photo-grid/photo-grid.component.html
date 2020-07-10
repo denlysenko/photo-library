@@ -1,6 +1,6 @@
 <div class="photo-grid">
-  <app-photo-tile *ngFor="let photo of photos"
+  <app-photo-tile *ngFor="let photo of photos; trackBy: trackByFn"
                   [photo]="photo"
-                  (click)="photoClicked.emit(photo.id)"
+                  (click)="photoClicked.emit(photo)"
                   data-testid="photo-tile"></app-photo-tile>
 </div>

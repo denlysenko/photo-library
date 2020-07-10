@@ -16,5 +16,9 @@ import { Photo } from '../../interfaces';
 })
 export class PhotoGridComponent {
   @Input() photos: Photo[];
-  @Output() photoClicked = new EventEmitter<string>();
+  @Output() photoClicked = new EventEmitter<Photo>();
+
+  trackByFn(_: number, item: Photo): string {
+    return item.id;
+  }
 }
