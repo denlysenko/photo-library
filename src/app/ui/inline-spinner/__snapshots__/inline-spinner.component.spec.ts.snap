@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InlineSpinnerComponent should create 1`] = `
+<app-inline-spinner>
+  <div
+    class="ellipsis"
+  >
+    <div />
+    <div />
+    <div />
+    <div />
+  </div>
+</app-inline-spinner>
+`;
