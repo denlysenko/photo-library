@@ -23,10 +23,23 @@ describe('PhotoTileComponent', () => {
     fixture = TestBed.createComponent(PhotoTileComponent);
     component = fixture.componentInstance;
     component.photo = photo;
-    fixture.detectChanges();
   });
 
   it('should create', () => {
+    fixture.detectChanges();
     expect(fixture).toMatchSnapshot();
+  });
+
+  it('should have sm css class by default', () => {
+    fixture.detectChanges();
+    const photoTile = fixture.nativeElement.querySelector('.photo-tile');
+    expect(photoTile.classList.contains('sm')).toBeTruthy();
+  });
+
+  it('should have lg css class', () => {
+    component.size = 'lg';
+    fixture.detectChanges();
+    const photoTile = fixture.nativeElement.querySelector('.photo-tile');
+    expect(photoTile.classList.contains('lg')).toBeTruthy();
   });
 });

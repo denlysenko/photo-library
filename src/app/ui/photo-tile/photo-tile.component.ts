@@ -10,4 +10,5 @@ import { Photo } from '../../interfaces';
 })
 export class PhotoTileComponent {
   @Input() photo: Photo;
+  @Input() size: 'sm' | 'lg' = 'sm';
 }

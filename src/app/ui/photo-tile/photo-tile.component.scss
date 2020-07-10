@@ -1,7 +1,15 @@
 .photo-tile {
-  width: 280px;
-  height: 280px;
   cursor: pointer;
+
+  &.sm {
+    width: 280px;
+    height: 280px;
+  }
+
+  &.lg {
+    width: 640px;
+    height: 480px;
+  }
 
   .photo {
     width: 100%;
