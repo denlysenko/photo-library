@@ -1,0 +1,45 @@
+.btn {
+  border-radius: 4px;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  line-height: 36px;
+
+  &:hover:not([disabled]) {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+  }
+
+  &[disabled] {
+    background-color: rgba(0, 0, 0, 0.12);
+    cursor: not-allowed;
+  }
+
+  &-basic {
+    background-color: #fafafa;
+    color: #1976d2;
+  }
+
+  &-primary {
+    background-color: #1976d2;
+    color: #fafafa;
+  }
+
+  &-warn {
+    background-color: #f44336;
+    color: white;
+  }
+
+  &-primary,
+  &-warn,
+  &-primary:active,
+  &-warn:active,
+  &-primary:focus,
+  &-warn:focus {
+    border-color: transparent;
+    outline: none;
+  }
+}
