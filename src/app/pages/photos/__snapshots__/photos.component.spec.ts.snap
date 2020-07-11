@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhotosComponent loadMore should call getPhotos() and render new photos 1`] = `
+<app-photos
+  cache={[Function Array]}
+  loadMore={[Function Subject]}
+  loading={[Function BehaviorSubject]}
+  loading$={[Function Observable]}
+  photos$={[Function Observable]}
+  photosService={[Function Object]}
+  route={[Function Object]}
+>
+  <app-infinite-scroll>
+    <app-photo-grid>
+      <div
+        class="photo-grid"
+      >
+        
+        <app-photo-tile
+          data-testid="photo-tile"
+        >
+          <div
+            class="photo-tile card sm"
+          >
+            <img
+              alt="photo"
+              class="photo"
+              src="link"
+            />
+          </div>
+        </app-photo-tile>
+        <app-photo-tile
+          data-testid="photo-tile"
+        >
+          <div
+            class="photo-tile card sm"
+          >
+            <img
+              alt="photo"
+              class="photo"
+              src="link2"
+            />
+          </div>
+        </app-photo-tile>
+      </div>
+    </app-photo-grid>
+    <app-inline-spinner
+      class="hidden"
+    >
+      <div
+        class="ellipsis"
+      >
+        <div />
+        <div />
+        <div />
+        <div />
+      </div>
+    </app-inline-spinner>
+    <div />
+  </app-infinite-scroll>
+</app-photos>
+`;
+
+exports[`PhotosComponent should create 1`] = `
+<app-photos
+  cache={[Function Array]}
+  loadMore={[Function Subject]}
+  loading={[Function BehaviorSubject]}
+  loading$={[Function Observable]}
+  photos$={[Function Observable]}
+  photosService={[Function Object]}
+  route={[Function Object]}
+>
+  <app-infinite-scroll>
+    <app-photo-grid>
+      <div
+        class="photo-grid"
+      >
+        
+        <app-photo-tile
+          data-testid="photo-tile"
+        >
+          <div
+            class="photo-tile card sm"
+          >
+            <img
+              alt="photo"
+              class="photo"
+              src="link"
+            />
+          </div>
+        </app-photo-tile>
+      </div>
+    </app-photo-grid>
+    <app-inline-spinner
+      class="hidden"
+    >
+      <div
+        class="ellipsis"
+      >
+        <div />
+        <div />
+        <div />
+        <div />
+      </div>
+    </app-inline-spinner>
+    <div />
+  </app-infinite-scroll>
+</app-photos>
+`;

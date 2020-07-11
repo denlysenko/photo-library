@@ -1,0 +1,5 @@
+<app-infinite-scroll (scrolled)="onScrolled()">
+  <app-photo-grid [photos]="photos$ | async"
+                  (photoClicked)="onPhotoClick($event)"></app-photo-grid>
+  <app-inline-spinner [class.hidden]="!(loading$ | async)"></app-inline-spinner>
+</app-infinite-scroll>
