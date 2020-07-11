@@ -56,7 +56,7 @@ export class PhotosComponent extends ProgressComponent {
   }
 
   onScrolled(): void {
-    if (this.cache.length <= DEFAULT_LIMIT) {
+    if (this.cache.length < DEFAULT_LIMIT) {
       return;
     }
 
