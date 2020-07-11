@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FavoritesComponent should create 1`] = `
+<app-favorites
+  photos$={[Function Observable]}
+  route={[Function Object]}
+  router={[Function Object]}
+>
+  <app-photo-grid>
+    <div
+      class="photo-grid"
+    >
+      
+      <app-photo-tile
+        data-testid="photo-tile"
+      >
+        <div
+          class="photo-tile card sm"
+        >
+          <img
+            alt="photo"
+            class="photo"
+            src="link"
+          />
+        </div>
+      </app-photo-tile>
+    </div>
+  </app-photo-grid>
+</app-favorites>
+`;
