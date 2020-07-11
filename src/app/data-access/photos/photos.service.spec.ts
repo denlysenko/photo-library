@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { FAVORITES_KEY } from '../../constants';
+import { DEFAULT_LIMIT, FAVORITES_KEY } from '../../constants';
 import { StorageService } from '../../core';
 import { PhotosService } from './photos.service';
 
@@ -46,7 +46,7 @@ describe('PhotosService', () => {
   describe('getPhotos', () => {
     it('should return photos', (done) => {
       service.getPhotos().subscribe((photos) => {
-        expect(photos.length).toBe(12);
+        expect(photos.length).toBe(DEFAULT_LIMIT);
         done();
       });
     });

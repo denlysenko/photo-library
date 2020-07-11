@@ -5,7 +5,7 @@ import faker from 'faker';
 import { Observable, of } from 'rxjs';
 import { delay } from 'rxjs/operators';
 
-import { FAVORITES_KEY } from '../../constants';
+import { DEFAULT_LIMIT, FAVORITES_KEY } from '../../constants';
 import { StorageService } from '../../core';
 import { Photo } from '../../interfaces';
 
@@ -13,7 +13,7 @@ function generateRandomInt(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function generatePhotos(count = 12): Photo[] {
+function generatePhotos(count = DEFAULT_LIMIT): Photo[] {
   const photos = [];
 
   for (let i = 0; i < count; i++) {
