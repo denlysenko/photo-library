@@ -1,0 +1,10 @@
+<div *ngIf="photo$ | async as photo"
+     class="photo">
+  <app-photo-tile [photo]="photo"
+                  size="lg"></app-photo-tile>
+  <button type="button"
+          class="btn btn-warn"
+          [disabled]="loading$ | async"
+          (click)="removeFromFavorites(photo.id)"
+          data-testid="remove-button">Remove From Favorites</button>
+</div>

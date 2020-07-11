@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhotoComponent should create 1`] = `
+<app-photo
+  loading={[Function BehaviorSubject]}
+  loading$={[Function Observable]}
+  photo$={[Function Observable]}
+  photosService={[Function Object]}
+  route={[Function Object]}
+  router={[Function Object]}
+>
+  <div
+    class="photo"
+  >
+    <app-photo-tile
+      size="lg"
+    >
+      <div
+        class="photo-tile card lg"
+      >
+        <img
+          alt="photo"
+          class="photo"
+          src="link"
+        />
+      </div>
+    </app-photo-tile>
+    <button
+      class="btn btn-warn"
+      data-testid="remove-button"
+      type="button"
+    >
+      Remove From Favorites
+    </button>
+  </div>
+</app-photo>
+`;
