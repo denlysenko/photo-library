@@ -1,4 +1,4 @@
-<app-fullpage-spinner [class.hidden]="!(loading$ | async)"></app-fullpage-spinner>
+<app-fullpage-spinner [class.hidden]="(loading$ | async) === false"></app-fullpage-spinner>
 <app-header [menuItems]="menuItems"></app-header>
 <div class="content"
      role="main">
