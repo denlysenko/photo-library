@@ -11,7 +11,7 @@ import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
 import { menuItems } from './constants';
-import { ProgressComponent } from './core';
+import { ProgressComponent } from './base';
 
 @Component({
   selector: 'app-root',
